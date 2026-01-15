@@ -28,6 +28,10 @@ app.get("/", (req, res) => {
 });
 
 const PORT = 5000;
+app.get("/", (req, res) => {
+  res.send("FitTrack Backend is running");
+});
+
 app.listen(PORT, () => {
   console.log("BACKEND IS RUNNING");
   console.log(`Server running on http://localhost:${PORT}`);
